@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Make Small Things That Last — Essay</title>
+  <style>
+    :root{
+      --max-width: 760px;
+      --muted: #6b7280;
+      --text: #0f172a;
+      --accent: #111827;
+      --bg: #ffffff;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: var(--serif);
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:48px 20px;
+      display:flex;
+      justify-content:center;
+    }
+    .container{
+      max-width:var(--max-width);
+      width:100%;
+    }
+    header{
+      margin-bottom:28px;
+    }
+    .site-title{
+      font-size:20px;
+      font-weight:700;
+      color:var(--accent);
+      letter-spacing:-0.02em;
+      margin:0 0 6px 0;
+    }
+    .byline{
+      font-size:13px;
+      color:var(--muted);
+    }
+    article{
+      padding:28px;
+      border-radius:8px;
+      background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,250,251,1) 100%);
+      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    }
+    h1{
+      font-family: var(--serif);
+      font-size:36px;
+      line-height:1.08;
+      margin:0 0 14px 0;
+      color:var(--accent);
+    }
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+      margin-bottom:18px;
+    }
+    p{margin:0 0 16px 0;font-size:18px}
+    blockquote{
+      margin:18px 0;
+      padding:12px 16px;
+      border-left:4px solid #e6e9ef;
+      background:#fbfbfd;
+      color:#334155;
+      font-style:italic;
+    }
+    .footer{
+      margin-top:22px;
+      font-size:13px;
+      color:var(--muted);
+      border-top:1px dashed #eef2f7;
+      padding-top:16px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    a{color:inherit;text-decoration:underline}
+    @media (max-width:600px){
+      body{padding:28px 16px}
+      h1{font-size:28px}
+      p{font-size:16px}
+      article{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="site-title">Essays on Building</div>
+      <div class="byline">Thought experiments about products, startups, and making things that matter</div>
+    </header>
+
+    <article>
+      <h1>Make Small Things That Last</h1>
+      <div class="meta">Published Sept 8, 2025 · essay</div>
+
+      <p>A startup, like a garden, is mostly about choices you make before anyone notices. People imagine the dramatic moments — funding rounds, press releases, departures — but most of the truth is quieter: the decisions you make about what to build and whom to hire when your product is little and the world hasn’t yet decided whether it’s worth caring about.</p>
+
+      <p>The standard advice is to “find a big market.” That’s a symptom, not a strategy. Markets are big or small depending on how you frame a problem. If you’re solving something that your first customers will notice every day, you have the right scale. Startups scale by repeating the same small miracle many times, not by trying to conjure a miracle that works once for a giant market.</p>
+
+      <blockquote>Make something honest: something that performs a function people need without pretending to be more than that.</blockquote>
+
+      <p>One of the simplest ways to get to repeatable miracles is to make something honest: something that performs a function people need without pretending to be more than that. Years of product experience teach a paradoxical lesson: the best leverage often comes from shrinking your ambitions. When you focus on a narrowly useful thing and make it delightful, your odds of being noticed go up, not down. The reason is social: people love to tell others about simple solutions to persistent annoyances. Stories travel faster than features.</p>
+
+      <p>A second lesson is about early hiring. When a company is four people or fewer, the mistake of hiring the wrong fourth person is far more catastrophic than hiring the wrong twentieth. That’s because early hires define culture by context, not policy. They set the defaults. If you need people who can tolerate messy code and imperfect interfaces to build the next several months of product, hire people who enjoy that mess. If you need obsessively careful designers, hire them instead. Don’t hire what sounds good on paper; hire for what you will actually need in the next ninety days.</p>
+
+      <p>There’s also a tempo problem. Startups live at the intersection of long-term vision and short-term execution. The temptation is to optimize for one of them exclusively. If you optimize only for long-term, you build beautiful scaffolding that never sees customers. If you optimize only for short-term, you exhaust yourself on incremental fixes and never create an asset. The right tempo is asymmetric: make a small, fun bet that you can iterate quickly on, but do it in a way that leaves durable structure. Durable doesn’t mean slow; it means building with an eye to what will be easy to change and what will be costly to replace.</p>
+
+      <p>I’ve noticed another consistent pattern: the companies that succeed are the ones where something you can point to exists early. Not a slide deck, not a roadmap, but something concrete that surfaces real trade-offs. Deciding between two UI flows on paper is different than making the trade-off for a real user. The act of shipping forces clarity; it reveals hidden assumptions. Don’t fall in love with hypotheticals.</p>
+
+      <p>People often ask whether there’s a formula for picking good ideas. There isn’t a formula, but there is a method: pick problems you can see through the eyes of a single user, then fix the parts that annoy that user most. That’s why founders who build for themselves often do well at first. They have a continuous probe into the product: they use it, they feel the friction, they remove it. This intimacy is not scalable as a product design method, but it’s invaluable early on.</p>
+
+      <p>Another thing to accept: most useful things are boring. “Boring” is a compliment in product terms. If your product is a modest improvement to an everyday workflow, it will be quietly adopted, and those adopters will tell their colleagues. The dynamics of word-of-mouth follow a simple rule: solve a real problem for people who have near neighbors who share that problem. Solving niche problems well is not the road to irrelevance; it’s the road to a defensible start.</p>
+
+      <p>Finally, think about longevity as a byproduct of clarity. Companies that last have simple core ideas they can explain quickly. When that idea is clear, product decisions become easier. The team can disagree about tactics, but the strategy is obvious. In contrast, companies that lastlessly pivot often do so because their core became muddled. Clarity is a filter that saves you from wasting resources.</p>
+
+      <p>If you’re building something now, do a small experiment you can finish in two weeks that forces a decision you’ve been avoiding. Ship it. Watch what people do — not what they say. Repeat. Over time, those small cycles compound into a product and a company that are hard to mistake for anything else.</p>
+
+      <div class="footer">
+        <div>Written by <strong>Builder</strong></div>
+        <div>© 2025 — small things, big consequences</div>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
